@@ -1,10 +1,8 @@
-// 6.
-// Adicione um método chamado
-// `pergunta` ao seu pokemon que printa
-// no console "O que o  < > vai fazer?" e
-// retorna o resultado do metodo
-// `acao`.
-
+// 8.
+// Printe todas as propriedades
+// e seus respectivos valores no
+// console no seguinte formato:
+// <propriedade>: <valor>
 
 pokemon = {
     numeroNacional: 143,
@@ -39,9 +37,8 @@ pokemon = {
     pergunta: function () {
        console.log(`O que o pokemon ${pokemon.nome} vai fazer? ${pokemon.action()}`)
     }
-
+    
 }
-pokemon.qualEhEstePokemon ()
-pokemon.qualNomeJapones ()
-pokemon.saberVoar()
-pokemon.pergunta ()
+for (const key in pokemon) {
+    console.log(`Chave:${key}| valor:${pokemon[key]}`)
+  }
