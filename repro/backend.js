@@ -24,11 +24,24 @@ function nasceuEmSP() {
   return isChecked
 }
 
+function ListaAlunas (nome, dataNascimento, SP, id){
+  this.nome = nome
+  this.dataDeNasc = dataDeNasc
+  this.SP = SP
+  this.id = id
+}
 botaoEnviar.addEventListener("click", function(e) {
   e.preventDefault()
   //estamos recevendo aqui os dados
   console.log(nome.value, dataDeNasc.value, nasceuEmSP())
+  criarAluna(nome.value, dataDeNasc.value, nasceuEmSP())
 })
+const lista = []
+function criarAluna (nome, data, sp){
+  let id = 0
+  list.push(new ListaAlunas(nome, data, sp, ++id))
+  console.log(lista)
+}
 
 //  btnMostrar.addEventListener("click", funcao para mostrar alunas)
 
